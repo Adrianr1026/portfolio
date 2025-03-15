@@ -1,0 +1,115 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') center center fixed;
+    background-size: cover;
+    color: #333333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(52, 81, 112, 0.8);
+    color: white;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+}
+
+/* Contact Icon Styling */
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Contact Link Styling */
+.contact-link {
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+/* Email Link */
+.email-link {
+    color: #007bff;
+}
+
+.email-link:hover {
+    color: #0056b3;
+}
+
+/* Phone Link */
+.phone-link {
+    color: #28a745;
+}
+
+.phone-link:hover {
+    color: #1e7e34;
+}
+
+.phone-link a {
+    color: inherit;  
+}
+
+/* linkedin - link */
+.linkedin-link {
+    color:rgba(219, 216, 25, 0.8)
+}
+
+.linkedin-link:hover {
+    color:rgba(142, 149, 13, 0.8)
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+/* Custom Styling */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Flexbox for Contact Info */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

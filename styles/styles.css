@@ -1,0 +1,319 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* main header style */
+header {
+    background-color: #c3edb5;
+    color: rgb(7, 7, 7);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.fields p {
+    font-size: 1.0em; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Sticky Menu Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(253, 247, 247, 0.9);
+    box-shadow: 0 2px 10px rgba(7, 7, 7, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0bc60b;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #0c0c0c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0fda0f;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0f0e0e;
+}
+
+.fields {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgb(209, 250, 216);
+}
+
+.soccer-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.soccer-images img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.soccer-teams {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(193, 234, 194, 0.9);
+}
+
+.teams-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.teams-gallery img {
+    width: 20%;
+    border-radius: 50px;
+}
+
+.soccer-players {
+    text-align: center;
+    padding: 40px 20px; 
+    background: #c1f6bb;
+}
+
+.players-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+}
+
+.players-gallery img {
+    width: 20%;
+    border-radius: 50px;
+}
+
+/* Heading styles */
+h4 {
+    text-align: center;
+    color: #0c0b0b;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* latest blog posts*/
+.blog-posts {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.post-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+}
+
+.post-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.post-content h5 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.post-content p {
+    margin: 0;
+    color: #030303;
+    line-height: 1.5;
+}
+
+.blog-post {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(198, 240, 199, 0.9);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(175, 232, 174);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    z-index: 1000;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container .btn {
+    background: #22e222;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.form-container .btn:hover {
+    background: #45f145;
+}
+
+.form-container .cancel {
+    background: #eed7d7;
+}
+
+.form-container .cancel:hover {
+    background: #e1d0d0;
+}
+
+.button-content {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgb(172, 242, 179);
+}
+
+.button-content button {
+    background: #54fb54;
+    color: rgb(8, 7, 7);
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1eeee;
+    color: rgb(14, 13, 13);
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
