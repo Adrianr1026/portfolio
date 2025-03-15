@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/aboutmestyles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">SOCCER</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#Soccer">Introduction</a>
+            <a href="about.html">About me</a>
+            <a href="index.html#Teams">Teams</a>
+            <a href="index.html#Players">Professional Atheltes</a>
+            <a href="index.html#blog">Blog Posts</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- About Me Content -->
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Me</h1>
+        </div>    
+            <div class="bio">
+                <h2>Adrian Ramos</h2>
+                <p>
+                Hi! My name is Adrian Ramos. I am a 3rd year Human Physiology Major at the University of Oregon. I am very passionate about learning about the anatomy of the human body and also the physiology of the human body.
+                I am also interested in technology. With my interests in technology, I am pursuing a minor in CIT. Following a human physiology and CIT courses here 
+                at the University of Oregon has been a very fun expereince and the balance between these two courses align with my interests very well. 
+                </p>
+                
+                <p>
+                While not in school, in my free time I enjoy playing soccer and also playing video games. I've been playing soccer for almost my whole life and my 
+                long passion for the sport inspired me to make a soccer themed website that ties together who I am as a person and also some soccer content that I 
+                have prior knowledge in. 
+                </p>
+            
+                <a href="resume.html" class="resume-btn">View My Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+    <!-- Footer-->
+    <footer>
+        <p>&copy; 2025 Soccer | All Rights Reserved | Images are created by pexels</p>
+    </footer>
+</body>
+</html>

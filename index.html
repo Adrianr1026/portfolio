@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Of Soccer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">SOCCER</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#Soccer">Introduction</a>
+            <a href="about.html">About me</a>
+            <a href="#Teams">Teams</a>
+            <a href="#Players">Professional Atheltes</a>
+            <a href="#blog">Blog Posts</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Main title of the page -->
+    <header>
+        <h1>The Game of Soccer</h1>
+        <p>The Biggest Sport in the World</p>
+    </header>
+
+    <section class="button-content">
+        <h2>Follow for Soccer content</h2>
+        <p>Get the latets news about soccer teams/players. Stay updated with the most recent soccer news. </p>
+        <button onclick="document.getElementById('signup-form').style.display='block'">Sign Up</button>
+        <div id="signup-form" class="form-popup">
+        <form class="form-container">
+            <h2>Sign up to stay updated with Soccer news</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> 
+            <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="Soccer" class="fields">
+        <h2>Introduction</h2>
+        <p>Soccer, also known as football in most countries, is the most played and watched sport on the planet.
+            With over 250 million players across 200+ countries, it unites people from their love of the sport.
+        </p>
+        <div class="soccer-images">
+            <img src="images/soccer.jpg" alt="Soccer">
+            <img src="images/field with players.jpg" alt="Players">
+            <img src="images/balls.jpg" alt="Balls">
+        </div>
+    </section>
+
+    <!-- Teams -->
+    <section id="Teams" class="soccer-teams">
+        <h3>Professional Teams</h3>
+        <div class="teams-gallery">
+            <img src="images/barcelona.png" alt="Barcelona Team">
+            <img src="images/madrid.png" alt="Madrid Team">
+        </div>
+    </section>
+
+    <!-- Players -->
+    <section id="Players" class="soccer-players">
+        <h4>Professional Athletes</h4>
+        <div class="players-gallery">
+            <img src="images/Messi.png" alt="Barcelona Team">
+            <img src="images/Ronaldo.png" alt="Madrid Team">
+        </div>
+</section>
+      <!-- Blogs -->
+      <section id="blog" class="blog-post">
+        <h2>Blog Posts</h2>
+        <div class="posts-grid">
+            <article class="post-card">
+                <img src="images/worldcup.jpg" alt="World cup">
+                <div class="post-blog">
+                    <h5>Best Soccer Player</h5>
+                    <p>It is evident that Messi is a better soccer player than Ronaldo. Messi has more trophies than Ronaldo and is much better overall.</p>
+                </div>
+            </article>
+            <article class="post-card">
+                <img src="images/argentina.png" alt="argentina">
+                <div class="post-content">
+                    <h5>Argentina World Cup</h5>
+                    <p>Argentina has notably been the best country to play soccer. They have the most trophies out of any other country and is a fan favories accross the world. </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+     <!-- Footer-->
+     <footer>
+        <p>&copy; 2025 Soccer | All Rights Reserved | Images are created by pexels</p>
+    </footer>
+    </body>
+</html>
